@@ -1,0 +1,910 @@
+/* ------------------------------ Default Styles ------------------------------ */
+body{font-family: Roboto, Arial; font-weight: 400; font-size: 15px;}
+
+.container{width: 85%; padding: 0;}
+
+.container-fluid{padding: 0;}
+
+a{text-decoration: none;}
+
+/* --------------- Header > Navigation --------------- */
+header{
+	height: auto;
+	background: #19283f;}
+
+header div.container{
+	width: 92.5%;
+	max-width: 991px;}
+
+nav{
+	height: 70px;
+	display: flex;
+	align-items: center;}
+
+nav div.logo img{
+	height: 45px;}
+
+.menu-burger{
+	display: none;
+	cursor: pointer;}
+
+div.navigation{
+	border-right: 1.5px solid #00c6bf;
+	margin-left: auto}
+
+div.navigation ul{
+	list-style-type: none;
+	display: inline-flex;
+	padding: 0 25px 0 0;
+	margin-left: auto}
+
+div.navigation ul li + li{
+	padding-left: 40px}
+
+div.navigation ul li a{
+	color: rgb(168, 185, 192);}
+
+div.navigation ul li a:hover{
+	color: #089295;}
+
+div.search-and-login{
+	display: flex;}
+
+div.search-and-login button{
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	margin: 0 22px}
+
+div.search-and-login button:focus, div.search-and-login button:active{
+	outline: none;}
+
+div.search-and-login button img{
+	height: 20px;
+	display: table;
+	margin: 0 auto}
+
+div.search-and-login a{
+	font-weight: 500;
+	padding: 10px 35px;
+	background: #ff3150;
+	color: #ffc501;
+	border-radius: 15px;
+	box-sizing: border-box;
+	border: 1.5px solid rgba(0, 0, 1, 0);}
+
+div.search-and-login a:hover{
+	background: #fff;
+	border-color: #ff3150;
+	box-sizing: border-box;
+	font-weight: 900;}
+
+/* Mobile Navigation */
+@media (max-width: 991px){
+	nav{
+		justify-content: flex-end;}
+	
+	div.logo{
+		margin-right: auto;}
+	
+	.menu-burger{
+		display: block;
+		width: 30px;
+		height: 20px;
+		position: relative;
+		margin-left: 20px;}
+	
+	.menu-burger::before{
+		content: '';
+		background-color: #fff;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		top: 0;
+		transition: all 0.4s ease;}
+	
+	.menu-burger span{
+		background-color: #fff;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		top: 9px;
+		transition: all 0.4s ease;}
+	
+	.menu-burger::after{
+		content: '';
+		background-color: #fff;
+		position: absolute;
+		width: 100%;
+		height: 2px;;
+		left: 0;
+		bottom: 0;
+		transition: all 0.4s ease;}
+
+	header{
+		position: relative;}
+		
+	header{
+		overflow: hidden;}
+
+	div.navigation ul{
+		flex-direction: column;
+		position: absolute;
+		top: 0;
+		right: -100%;
+		background-color: #385176;
+		height: 100%;
+		width: 33.333vw;
+		transition: all 0.4s ease;}
+
+	div.navigation ul li{
+		margin-left: 10px;}
+
+	div.navigation ul li a{
+		font-size: 17.5px;}
+
+	div.navigation ul li.first-element{
+		margin-top: 27px;}
+
+	div.navigation ul li + li{
+		padding-left: 0;
+		padding-top: 20px;}
+		
+	div.navigation{
+		border: none}}
+
+.menu-toggle{
+	right: 0 !important;
+	transition: all 0.4s ease;}
+
+.menu-burger.menu-active::before{
+	transform: rotate(45deg);
+	top: 9px;
+	transition: all 0.4s ease;}
+
+.menu-burger.menu-active::after{
+	transform: rotate(135deg);
+	bottom: 9px;
+	transition: all 0.4s ease;}
+
+.menu-burger.menu-active span{
+	transform: scale(0);
+	transition: all 0.4s ease;}
+
+/* --------------- Header > Business Card --------------- */
+div.business-card{
+	padding-top: 135px;
+	padding-bottom: 145px;}
+
+div.business-card h2{
+ 	font-size: 51px;
+ 	text-align: center;
+ 	color: rgb(240, 248, 251);
+ 	padding-bottom: 5px;}
+
+div.business-card p{
+	color: #a8b9c0;
+	text-align: center;
+	padding-bottom: 35px;}
+
+div.business-card a{
+	background: #ff3150;
+	color: #ffc501;
+	padding: 15px 55px;
+	border-radius: 15px;
+	box-sizing: border-box;
+	border: 1.5px solid rgba(0, 0, 1, 0);
+	display: table;
+	margin: 0 auto}
+
+div.business-card a:hover{
+	background: #fff;
+	border-color: #ff3150;
+	box-sizing: border-box;
+	font-weight: 900;}
+
+
+/* --------------- Section > We're good at --------------- */
+section.our-services{
+	background: #fff;
+	height: auto;
+	padding: 60px 0 65px 0;}
+
+section.our-services div.services-view img{
+	width: 80px;
+	display: block;
+	margin: 0 auto}
+
+section.our-services div.services-view p.services-heading{
+	text-align: center;
+	font-size: 35px;
+	color: rgb(26, 41, 64);
+	padding: 50px 0 20px 0;
+	font-weight: 500;}
+
+section.our-services div.services-view p.services-paragraph{
+	text-align: center;
+	color: rgb(168, 185, 192);}
+
+div.underline{
+	width: 150px;
+	height: 1.5px;
+	background: #00c6bf;
+	margin: 0 auto;
+	margin-top: 18px;}
+
+div.main-services{
+	display: flex;
+	flex-wrap: wrap;}
+
+div.main-services div.service__item{
+	padding: 80px 35px 0 35px;}
+
+div.main-services div.service__item div.z-images img{
+	display: block;
+	margin: 0 auto}
+
+div.main-services div.service__item div.z-images img.lay-under{
+	height: 195px;}
+
+div.main-services div.service__item div.z-images img.lay-upper{
+	height: 55px;
+	position: relative;
+	top: -55px;}
+
+div.main-services div.service__item div.z-images img.one{
+	left: 21px}
+
+div.main-services div.service__item div.service__item__info h3{
+	text-align: center;
+ 	font-size: 20px;
+	color: rgb(255, 197, 1);
+	padding-bottom: 40px;
+	margin-top: -30px;}
+
+div.main-services div.service__item div.service__item__info p{
+  color: rgb(168, 185, 192);
+  text-align: center;}
+
+
+/* --------------- Section > We Make This --------------- */
+section.portfolio{
+	background: #eff7fa;
+	height: auto;
+	padding: 60px 0;}
+
+section.portfolio img{
+	width: 80px;
+	display: block;
+	margin: 0 auto}
+
+section.portfolio p.services-heading{
+	text-align: center;
+	font-size: 35px;
+	color: rgb(26, 41, 64);
+	padding: 50px 0 20px 0;
+	font-weight: 500;}
+
+section.portfolio p.services-paragraph{
+	text-align: center;
+	color: rgb(168, 185, 192);}
+
+/* -- Filters -- */ /* add JS */
+div.filters{
+	padding-top: 60px;
+	display: table;
+	margin: 0 auto}
+
+div.filters button{
+	display: inline-block;
+	background: transparent;
+	color: #a8b9c0;
+	padding: 15px 20px;
+	border-radius: 15px;
+	border: none;}
+
+div.filters button:active, div.filters button:focus{
+	outline: none;}
+
+div.filters button:hover{
+	color: #ffc501;}
+
+div.filters button + button{
+	margin-left: 15px;}
+
+.button-active{
+	background: #ff3150 !important;
+	color: #ffc501 !important;} /* For JS */
+/* -- Filters -- */ /* add JS */
+
+div.portfolio-images{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 55px 0}
+
+div.portfolio__item{
+	padding: 0 30px 30px 0;
+	min-height: 200px;
+	background: #fff;}
+
+section.portfolio a{
+	background: #ff3150;
+	color: #ffc501;
+	padding: 15px 55px;
+	border-radius: 15px;
+	box-sizing: border-box;
+	border: 1.5px solid rgba(0, 0, 1, 0);
+	display: table;
+	margin: 0 auto}
+
+section.portfolio a:hover{
+	background: #fff;
+	border-color: #ff3150;
+	box-sizing: border-box;
+	font-weight: 900;}
+
+
+/* --------------- Section > Stuff --------------- */
+section.stuff{
+	height: auto;
+	background: #fff;
+	padding-top: 60px}
+
+section.stuff div img[src="images/ico-svg-2.svg"]{
+	width: 80px;
+	display: block;
+	margin: 0 auto}
+
+section.stuff div p.services-heading{
+	text-align: center;
+	font-size: 35px;
+	color: rgb(26, 41, 64);
+	padding: 50px 0 20px 0;
+	font-weight: 500;}
+
+section.stuff div p.services-paragraph{
+	text-align: center;
+	color: rgb(168, 185, 192);}
+
+section.stuff div p.stuff-paragraph{
+	text-align: center;
+	color: rgb(168, 185, 192);
+	max-width: 575px;
+	margin: 0 auto;
+	padding-top: 28px}
+
+div.retina-design{
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 60px;
+	align-items: center;}
+
+div.first-retina{
+	padding: 0 70px 0 0;}
+
+section.stuff div div.retina-design div.first-retina p.services-heading{
+	text-align: left;
+	font-size: 35px;
+	color: rgb(26, 41, 64);
+	font-weight: 500;
+	padding: 0 0 30px 0;}
+
+section.stuff div div.retina-design div.first-retina p{
+	text-align: left;
+	color: rgb(168, 185, 192)}
+
+section.stuff div div.retina-design div.first-retina p.for-padding{
+	padding: 30px 0 25px 0;}
+
+section.stuff div div.retina-design div.first-retina a{
+	display: inline-block;
+	background: #ff3150;
+	color: #ffc501;
+	padding: 15px 50px;
+	border-radius: 15px;
+	box-sizing: border-box;
+	border: 1.5px solid rgba(0, 0, 1, 0);}
+
+section.stuff div div.retina-design div.first-retina a:hover{
+	background: #fff;
+	border-color: #ff3150;
+	box-sizing: border-box;
+	font-weight: 900;}
+
+div.second-retina{
+	padding: 0;}
+
+div.second-retina img{
+	width: 100%;
+	height: auto;}
+
+
+/* --------------- Section > Team --------------- */
+section.our-team{
+	height: auto;
+	background: #eff7fa;
+	padding: 108px 0 60px 0;}
+
+.team-heading{
+	color: #ffc501;
+	font-size: 35px;
+	font-weight: 500;
+	text-align: center;
+	padding-bottom: 35px;}
+
+.team-paragraph{
+	text-align: center;
+	max-width: 970px;
+	color: rgb(168, 185, 192);
+	margin: 0 auto;}
+
+div.team-members{
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 60px;}
+
+div.team-members div.member-ava{
+	min-height: 200px;
+	background: #fff;}
+
+div.member p.member-name{
+	color: #fff;
+	background: #33d1cc;
+	padding: 20px 0;
+	font-size: 20px;
+	text-align: center;}
+
+div.member p.member-words{
+	color: rgb(168, 185, 192);
+	background: #fff;
+	min-height: 170px;
+	padding: 45px 35px 5px 35px;
+	text-align: center;}
+
+
+/* --------------- Section > Clients --------------- */
+section.clients{
+	background: #fff;
+	padding: 60px 0}
+
+section.clients div.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between}
+
+section.clients div img{
+	height: 42px;
+	display: inline-block;}
+
+
+/* --------------- Section > Start Project --------------- */
+section.start-project{
+	height: auto;
+	background: #19283f;
+	padding: 120px 0 115px 0}
+
+.project-now{
+	color: #fff;
+	font-weight: 500;
+	font-size: 35px;
+	text-align: center;}
+
+.project-paragraph{
+	color: #a8b9c0;
+	text-align: center;
+	padding: 25px 0 55px 0}
+
+section.start-project a{
+	display: inline-block;
+	background: #ff3150;
+	color: #ffc501;
+	padding: 15px 50px;
+	border-radius: 15px;
+	box-sizing: border-box;
+	border: 1.5px solid rgba(0, 0, 1, 0);
+	display: table;
+	margin: 0 auto;}
+
+section.start-project a:hover{
+	background: #fff;
+	border-color: #ff3150;
+	box-sizing: border-box;
+	font-weight: 900;}
+
+
+/* --------------- Section > Blog --------------- */
+section.our-blog{
+	height: auto;
+	background: #fff;
+	padding: 60px 0;}
+
+section.our-blog  div.container img[src="images/ico-svg-2.svg"]{
+	width: 80px;
+	display: block;
+	margin: 0 auto}
+
+section.our-blog div.container p.services-heading{
+	text-align: center;
+	font-size: 35px;
+	color: rgb(26, 41, 64);
+	padding: 50px 0 20px 0;
+	font-weight: 500;}
+
+section.our-blog div.container p.services-paragraph{
+	text-align: center;
+	color: rgb(168, 185, 192)}
+
+.blog-container{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 60px 0}
+
+.blog-article .article-image{
+	min-height: 130px;
+	background: #eff7fa;}
+
+.blog-article .article-date{
+	font-size: 13px;
+	color: rgb(168, 185, 192);
+	padding: 20px 0}
+
+.blog-article .article-title{
+	color: #1a2940;
+	font-size: 20px;}
+
+section.our-blog div.container a{
+	display: inline-block;
+	background: #ff3150;
+	color: #ffc501;
+	padding: 20px 55px;
+	border-radius: 15px;
+	box-sizing: border-box;
+	border: 1.5px solid rgba(0, 0, 1, 0);}
+
+section.our-blog div.container a:hover{
+	background: #fff;
+	border-color: #ff3150;
+	box-sizing: border-box;
+	font-weight: 900;}
+
+
+/* --------------- Section > Subscribe --------------- */
+section.subscribe{
+	height: auto;
+	background: #ffc400;
+	padding: 25px 0}
+
+div.subscribe-wrapper{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;}
+
+div.subscribe-wrapper p{
+	color: #1a2940;
+	font-size: 20px;}
+
+div.subscribe-wrapper form{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;}
+
+.subscribe-wrapper form input{
+	background: transparent;
+	color: #fff;
+	min-width: 440px;
+	border: none;
+	padding: 0;
+	border-bottom: 1.5px solid #fff;
+	height: 30px;
+	margin: 0 30px 0 35px;}
+
+div.subscribe-wrapper form input::placeholder{
+	color: #fff;}
+
+div.subscribe-wrapper form input:focus, div.subscribe-wrapper form button:focus, div.subscribe-wrapper form button:active{
+	outline: none;}
+
+.subscribe-wrapper form button{
+	color: #ffc400;
+	background: #1a2940;
+	display: inline-block;
+	padding: 15px 60px;
+	border-radius: 20px;
+	box-sizing: border-box;
+	border: 1.5px solid rgba(0, 0, 1, 0);
+	cursor: pointer;}
+
+div.subscribe-wrapper form button:hover{
+	background: #ffc400;
+	color: #1a2940;
+	border-color: #1a2940;}
+
+/* --------------- Footer --------------- */
+footer{
+	height: auto;
+	background: #19283f;
+	padding: 60px 0 55px 0}
+
+div.footer-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;}
+
+.item__heading{
+	color: #f0f8fb;}
+
+.item__par{
+	color: #a8b9c0;
+	font-size: 13px;
+ 	line-height: 2.308;}
+
+div.item-1 img{width: 90px; padding-bottom: 25px;}
+
+.item-1__par_2, .item-1__par_3{color: #a8b9c0; font-size: 13px;}
+
+.item-1__par_2{padding: 80px 0 15px}
+
+.item-1__par_2 span{color: #00c7c0}
+
+.item-1__par_3 span{color: #ffc501;}
+
+div.item-2, div.item-3{
+	display: flex;
+	flex-direction: column;}
+
+div.item-2 div.item__links, div.item-3 div.item__links{
+	display: flex;
+	flex-direction: column;}
+
+div.item-2 p, div.item-3 p{margin-bottom: 30px}
+
+div.item-2 a, div.item-3 a{
+	color: #a8b9c0;
+	font-size: 13px;}
+
+div.item-2 a + a, div.item-3 a + a{margin-top: 25px;}
+
+div.item-2 a:hover, div.item-3 a:hover{color: #00c7c0;}
+
+div.item-4 p.item__heading{padding-bottom: 20px}
+
+div.item-4 a.email{
+	color: #fff;
+	display: block;
+	background: #ff3150;
+	border-radius: 20px;
+	padding: 15px 0;
+	text-align: center;
+	box-sizing: border-box;
+	border: 1.5px solid rgba(0, 0, 1, 0);
+	margin: 43px 0 37px 0}
+
+div.item-4 a.email:hover{
+	color: #ff3150;
+	border-color: #ff3150;
+	background: #fff;
+	box-sizing: border-box;
+	font-weight: 900;}
+
+div.social-icons{display: flex}
+
+div.social-icons a img{height: 17px;}
+
+div.social-icons a + a{margin-left: 10px;}
+
+.facebook{
+	background: #347cd2;
+	border-radius: 17.5px;
+	padding: 10px 14.5px 0 14.5px}
+
+.twitter{
+	background: #1ec4ff;
+	border-radius: 17.5px;
+	padding: 10px 7px 5px 7px}
+
+.google_plus{
+	background: #ff4032;
+	border-radius: 17.5px;
+	padding: 10px 8px 0px 10px}
+
+.dribbble{
+	background: #ff3298;
+	border-radius: 17.5px;
+	padding: 9px 9px 0 9px}
+
+
+
+
+
+/* --------------------------------------- Adaptive Layout --------------------------------------- */
+@media (max-width: 1200px){ /* Media 1200px */ 
+	section.stuff div div.retina-design div.first-retina a{
+		display: table;
+		margin: 0 auto;
+		margin-bottom: 30px}
+
+	div.first-retina {
+    	padding: 0;}
+
+    section.stuff div div.retina-design div.first-retina p.services-heading {
+	    text-align: center;}}
+
+
+
+@media(max-width: 1108px){ /* Media 1108px */ 
+	.blog-article .article-title{
+		font-size: 17.5px;}}
+
+
+
+@media (max-width: 1055px){ /* Media 1055px */ 
+	div.member p.member-words{
+		min-height: 170px;
+		padding: 25px 25px 5px 25px;}
+
+
+
+@media (max-width: 1038px){ /* Media 1038px */ 
+	div.team-members div.member-ava{
+		min-height: 150px}}
+
+
+
+@media (max-width: 991px){ /* Media 992px */ 
+	div.logo{
+		padding-top: 10px}
+
+	div.member p.member-words{
+		min-height: 150px;
+		padding: 40px 35px 5px 35px;}
+
+	div.team-members div.member-ava{
+		min-height: 170px}
+
+	.member-1, .member-2{
+		padding-bottom: 20px;}
+
+	div.member-1 p.member-words, div.member-2 p.member-words{
+		min-height: 100px}
+	
+	div.blog-article{
+		padding: 0;}
+
+	div.blog-article + div.blog-article{
+		margin-top: 30px;}
+
+	.blog-article .article-date{
+		padding: 10px 0}
+
+	.blog-article .article-image{
+		min-height: 225px}
+
+	.blog-article .article-title{
+		font-size: 20px;
+		font-weight: 500;}
+	
+	footer .container{
+		max-width: 850px;
+    	width: 92.5%;}
+
+    div.item-2 a + a, div.item-3 a + a{margin-top: 0;}
+
+	.item__par{
+	 	line-height: 1.5;}
+
+	 div.item-2 div.item__links, div.item-3 div.item__links{
+		flex-direction: row;
+		flex-wrap: wrap;}
+
+	div.item-2 p, div.item-3 p{
+		margin: 0;}
+
+	div.item-2 a + a, div.item-3 a + a{
+		margin-left: 10px;}
+
+	.item__links{
+		align-items: center}
+
+	.item-1__par_2{padding: 15px 0 15px}
+	
+	div.item-1{
+		padding-bottom: 30px}
+
+	div.social-icons{justify-content: center;}
+	
+	div.item-4 p.item__heading{
+		padding-bottom: 0;
+		margin-bottom: 0;}
+
+	div.item-1 img{width: 90px; padding-bottom: 10px;}
+
+	 div.item-2, div.item-3{
+		flex-direction: column;
+		padding-bottom: 30px}}
+
+
+
+@media (max-width: 768px){ /* Media 768px */ 
+	div.main-services div.service__item div.service__item__info p {
+		max-width: 350px;
+		margin: 0 auto}
+	
+	section.clients{
+		padding: 40px}
+
+	section.clients div.container img.img-padding{
+		margin-bottom: 15px}
+
+	div.member-1 p.member-words, div.member-2 p.member-words{
+		min-height: 130px}}
+
+
+
+@media (max-width: 704px){ /* Media 704px */ 
+	div.subscribe-wrapper form{
+		flex-direction: column;}
+
+	div.subscribe-wrapper form button{
+		margin-top: 20px;
+		display: table;
+		margin: 0 auto;}
+
+	div.subscribe-wrapper form input{
+		margin: 20px 0 12.5px 0;
+		min-width: 330px;}
+
+	div.subscribe-wrapper{
+		flex-direction: column;}}
+
+
+
+@media (max-width: 666px){ /* Media 666px */ 
+	div.navigation ul{
+		width: 40vw;}}
+
+
+
+@media (max-width: 624px){ /* Media 624px */ 
+	div.member-3 p.member-words, div.member-4 p.member-words{
+		min-height: 190px}}
+
+
+
+@media (max-width: 575px){ /* Media 575px */ 
+	div.team-members{
+		max-width: 340px;
+		margin: 0 auto}
+
+	div.member-3, div.member-4{
+		padding-bottom: 20px}
+
+	div.member-3 p.member-words, div.member-4 p.member-words{
+		min-height: 140px}}
+
+
+
+@media (max-width: 540px){ /* Media 540px */ 
+	div.item-2 a.last-link{
+		margin: 0}}
+
+
+
+@media (max-width: 453px){ /* Media 453px */ 
+	button.last-button{
+		margin-left: 0 !important;;
+		margin-top: 10px;}}
+
+
+
+@media (max-width: 376px){ /* Media 376px */ 
+	div.item-2 a.last-link{
+		margin-left: 10px;}
+
+	div.item-2 a.pre-last-link{
+		margin: 0}
+
+	div.item-2 a.pre-pre-last-link{
+		margin-right: 10px}}
